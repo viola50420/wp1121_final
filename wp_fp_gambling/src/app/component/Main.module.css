@@ -1,0 +1,89 @@
+/* Main.module.css */
+
+.bounce {
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.colorChange {
+    transition: background-color 0.5s ease-in-out;
+}
+
+.colorChange:hover {
+    background-color: #ffcc00;
+}
+
+.rotate {
+    transition: transform 0.5s ease-in-out;
+}
+
+.noRotate {
+    tranform: none !important;
+}
+
+.rotate:hover {
+    transform: rotate(20deg);
+}
+
+.fadeIn {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.jump {
+    animation: jump 1s ease-in-out infinite;
+}
+
+@keyframes jump {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.colorFlash {
+    animation: colorFlash 1s infinite alternate;
+}
+
+@keyframes colorFlash {
+
+    0%,
+    100% {
+        color: #ffffff;
+    }
+
+    50% {
+        color: #ffcc00;
+    }
+}

@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255; /* 修改为白色的 RGB 值 */
+  --background-end-rgb: 255, 255, 255; /* 修改为白色的 RGB 值 */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 25, 25, 25;
+    --background-end-rgb: 40, 40, 40;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--background-start-rgb)),
+    rgb(var(--background-end-rgb))
+  );
+
+  font-family: "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+.btn.selected {
+  background-color: black;
+  color: white;
+}

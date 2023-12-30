@@ -1,0 +1,46 @@
+{
+  "name": "wp_fp_gambling",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "migrate": "drizzle-kit push:pg"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^4.28.1",
+    "dotenv": "^16.3.1",
+    "drizzle-kit": "^0.20.8",
+    "drizzle-orm": "^0.29.2",
+    "next": "14.0.4",
+    "nextjs-simple-typewriter": "^5.2.2",
+    "pg": "^8.11.3",
+    "postgres": "^3.4.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "swr": "^2.2.4",
+    "typewriter-effect": "^2.21.0",
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@types/node": "^20",
+    "@types/pg": "^8.10.9",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "postcss": "^8",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.9",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}
