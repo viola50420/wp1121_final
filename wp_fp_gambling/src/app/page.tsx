@@ -138,6 +138,7 @@ export default async function Home() {
               console.log(contract);
               return (
                 <Contract
+                  key={contract.contractId} 
                   contractId={contract.contractId}
                   title={contract.title}
                   description={contract.description}
@@ -174,6 +175,7 @@ export default async function Home() {
               console.log(contract);
               return (
                 <Contract
+                  key={contract.contractId} 
                   contractId={contract.contractId}
                   title={contract.title}
                   description={contract.description}
@@ -210,6 +212,7 @@ export default async function Home() {
               console.log(contract);
               return (
                 <Contract
+                  key={contract.contractId} 
                   contractId={contract.contractId}
                   title={contract.title}
                   description={contract.description}
